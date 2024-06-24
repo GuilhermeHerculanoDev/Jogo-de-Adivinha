@@ -1,0 +1,146 @@
+@import url('https://fonts.cdnfonts.com/css/outfit');
+
+*{
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color:  #20232a;
+  color: #ffffff;
+}
+
+#container{
+  filter: blur(0px);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+#containerText{
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+}
+
+#titulo{
+  text-align: center;
+}
+
+#dica{
+  text-align: center;
+}
+
+#containerInput{
+  display: flex;
+  justify-content: center;
+  margin-top:40px;
+  gap: 7px;
+}
+
+#input{
+  width: 90%;
+  margin: 5px;
+  outline: none;
+  border: 1px solid ;
+  border-radius: 3px;
+  padding: 8px;
+  background-color: white;
+  color: #888888;
+}
+
+#containerTable{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.lineClassificacao{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  height: 20px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fundo{
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background-color: black;
+}
+
+.number{
+  z-index: 1;
+  background-color: transparent;
+}
+
+.porcentagem{
+  z-index: 2;
+  background-color: transparent;
+}
+
+#containerVencedor {
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+#vencedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: transparent;
+}
+
+#titleVencedor{
+  background-color: transparent;
+}
+
+#mensagemVencedor{
+  background-color: transparent;
+}
+
+#rejogar{
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 500px) {
+  #containerText{
+    margin-top: 50px;
+  }
+
+  #input{
+    width: 450px;
+  }
+
+  .lineClassificacao{
+    width: 450px;
+  }
+}
